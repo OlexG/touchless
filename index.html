@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Touchless</title>
+  </head>
+  <body>
+    <main class="app">
+      <section class="topbar">
+        <div>
+          <h1>Touchless</h1>
+          <p id="statusText">Stopped</p>
+        </div>
+        <button id="toggleButton" type="button">Start</button>
+      </section>
+
+      <section class="status-grid">
+        <div>
+          <span>Gesture</span>
+          <strong id="gestureValue">none</strong>
+        </div>
+        <div>
+          <span>Tracking</span>
+          <strong id="trackingValue">false</strong>
+        </div>
+        <div>
+          <span>Hand</span>
+          <strong id="handValue">unknown</strong>
+        </div>
+        <div>
+          <span>Voice</span>
+          <strong id="voiceValue">idle</strong>
+        </div>
+        <div>
+          <span>Startup</span>
+          <strong id="startupValue">idle</strong>
+        </div>
+        <div>
+          <span>Camera</span>
+          <strong id="cameraValue">unknown</strong>
+        </div>
+        <div>
+          <span>Mode</span>
+          <strong id="modeValue">none</strong>
+        </div>
+        <div>
+          <span>Command</span>
+          <strong id="commandValue">none</strong>
+        </div>
+        <div>
+          <span>Model</span>
+          <strong id="classifiedGestureValue">unknown</strong>
+        </div>
+        <div>
+          <span>Voice command</span>
+          <strong id="voiceCommandValue">none</strong>
+        </div>
+        <div>
+          <span>Point</span>
+          <strong id="pointValue">none</strong>
+        </div>
+        <div>
+          <span>Cursor</span>
+          <strong id="cursorValue">idle</strong>
+        </div>
+        <div>
+          <span>Accessibility</span>
+          <strong id="accessibilityValue">unknown</strong>
+        </div>
+      </section>
+
+      <section class="camera-panel">
+        <img id="cameraPreview" alt="" />
+        <div id="previewEmpty">Camera preview appears when running</div>
+      </section>
+
+      <section class="controls">
+        <label class="switch">
+          <input id="cursorEnabled" type="checkbox" checked />
+          <span>Control cursor</span>
+        </label>
+        <label class="switch">
+          <input id="debugWindow" type="checkbox" />
+          <span>Show debug camera window</span>
+        </label>
+
+        <label>
+          Cursor gain
+          <input id="cursorGain" type="range" min="0.2" max="2.0" step="0.05" value="0.65" />
+          <output id="cursorGainValue">0.65</output>
+        </label>
+        <label>
+          Cursor smoothing
+          <input id="cursorSmoothingAlpha" type="range" min="0.08" max="0.8" step="0.02" value="0.20" />
+          <output id="cursorSmoothingAlphaValue">0.20</output>
+        </label>
+      </section>
+
+      <pre id="log"></pre>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

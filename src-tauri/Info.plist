@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>NSCameraUsageDescription</key>
+  <string>Touchless uses the camera to detect hand gestures for cursor control.</string>
+  <key>NSMicrophoneUsageDescription</key>
+  <string>Touchless uses the microphone to listen for voice commands like click and type.</string>
+  <key>NSSpeechRecognitionUsageDescription</key>
+  <string>Touchless uses speech recognition to convert voice commands into clicks and typed text.</string>
+</dict>
+</plist>
